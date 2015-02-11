@@ -1,0 +1,39 @@
+{% extends('RaysTopBundle::layout.html.twig') %}
+{% block title %}{% endblock %}
+
+{% block stylesheets %}
+{{include('RaysTopBundle:widget:comm.css.html.twig')}}
+{% endblock %}
+
+{% block javascripts %}
+{{include('RaysTopBundle:widget:comm.js.html.twig')}}
+{% endblock %}
+
+{% block body %}
+{{ include('RaysTopBundle:widget:header.html.twig') }}
+{{ include('RaysTopBundle:widget:mode.basic.html.twig') }}
+<!--Begin Content-->
+<div class="content_bg">
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                <div class="pheader">
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="span12">
+                <form action="" method="post" class="form-horizontal">
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End Content-->
+{% endblock %}
+
+{% block customjs %}
+
+{% endblock %}

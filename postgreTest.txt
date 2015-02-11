@@ -1,0 +1,186 @@
+insert  into actionpowers(ID,ActionStr,ActionName,ActionUrl,ParentID,Path) values 
+(1,'Sales','销售管理',NULL,0,'0'),
+(2,'Purchase','采购管理',NULL,0,'0'),
+(3,'Stock','库存管理',NULL,0,'0'),
+(4,'Client','客户管理',NULL,0,'0'),
+(5,'Dealing','往来管理',NULL,0,'0'),
+(6,'Member','会员管理',NULL,0,'0'),
+(7,'Pay','工资管理',NULL,0,'0'),
+(8,'Basic','基本信息',NULL,0,'0'),
+(9,'Financial','财务管理',NULL,0,'0'),
+(10,'Initial','初始配置',NULL,0,'0'),
+(11,'System','系统管理',NULL,0,'0'),
+(51,'SaleOrder','销售订单',NULL,1,'0-1-51'),
+(52,'SaleDelivery','销售发货单',NULL,1,'0-1-52'),
+(53,'SaleRet','销售退货单',NULL,1,'0-1-53'),
+(54,'SaleTrend','销售走势',NULL,1,'0-1-54'),
+(55,'SaleReport','销售报表',NULL,1,'0-1-55'),
+(56,'SaleRanking','销售排行表',NULL,1,'0-1-56'),
+(57,'SaleCheck','销售对帐',NULL,1,'0-1-57'),
+(58,'SaleProfit','利润分析',NULL,1,'0-1-58'),
+(59,'SaleAffair','日程事务管理',NULL,1,'0-1-59'),
+(60,'SaleInvoice','销售发票管理',NULL,1,'0-1-60'),
+(61,'PurchaseOrder','采购订单',NULL,2,'0-2-61'),
+(62,'PurchaseArrival','采购到货单',NULL,2,'0-2-62'),
+(63,'PurchaseRet','采购退货单',NULL,2,'0-2-63'),
+(64,'PurchaseTrend','采购走势',NULL,2,'0-2-64'),
+(65,'PurchaseReport','采购报表',NULL,2,'0-2-65'),
+(66,'PurchaseStatistical','商品采购统计',NULL,2,'0-2-66'),
+(67,'PurchaseCheck','采购对帐',NULL,2,'0-2-67'),
+(68,'PurchaseInvoice','采购发票管理',NULL,2,'0-2-68'),
+(69,'StockFor','商品调拨',NULL,3,'0-3-69'),
+(70,'StockLoss','报损单',NULL,3,'0-3-70'),
+(71,'StockProfit','报溢单',NULL,3,'0-3-71'),
+(72,'StockSend','增送单',NULL,3,'0-3-72'),
+(73,'StockReceive','获赠单',NULL,3,'0-3-73'),
+(74,'StockImport','入库单',NULL,3,'0-3-74'),
+(75,'StockExport','出库单',NULL,3,'0-3-75'),
+(76,'StockAssembly','商品组装单',NULL,3,'0-3-76'),
+(77,'StockSplit','商品拆分单',NULL,3,'0-3-77'),
+(78,'StockReport','库存报表',NULL,3,'0-3-78'),
+(79,'StockAlarm','库存上下限报警',NULL,3,'0-3-79'),
+(80,'StockCheck','库存盘点',NULL,3,'0-3-80'),
+(81,'ClientGrouping','客户分组',NULL,4,'0-4-81'),
+(82,'ClientGroups','客户组别',NULL,4,'0-4-82'),
+(83,'ClientInfo','客户信息',NULL,4,'0-4-83'),
+(84,'ClientPrice','报价单管理',NULL,4,'0-4-84'),
+(85,'ClientVisit','拜访计划',NULL,4,'0-4-85'),
+(86,'ClientFeedback','客户反馈',NULL,4,'0-4-86'),
+(87,'ClientSellInvoice','销售发票',NULL,4,'0-4-87'),
+(88,'DealingReceivables','应收款管理',NULL,5,'0-5-88'),
+(89,'DealingPayables','应付款管理',NULL,5,'0-5-89'),
+(90,'DealingExtended','超期应收款',NULL,5,'0-5-90'),
+(91,'DealingAdvanceIn','预收款管理',NULL,5,'0-5-91'),
+(92,'DealingAdvanceOut','预付款管理',NULL,5,'0-5-92'),
+(93,'DealingBorrowed','借入单管理',NULL,5,'0-5-93'),
+(94,'DealingLoan','借出单管理',NULL,5,'0-5-94'),
+(95,'DealingSalesReceipts','销售收款单',NULL,5,'0-5-95'),
+(96,'DealingPurchasePayments','采购付款单',NULL,5,'0-5-96'),
+(97,'MemberLevel','会员级别',NULL,6,'0-6-97'),
+(98,'MemberList','会员列表',NULL,6,'0-6-98'),
+(99,'MemberShopping','会员购物',NULL,6,'0-6-99'),
+(100,'MemberConsumption','消费列表',NULL,6,'0-6-100'),
+(101,'MemberGift','礼品列表',NULL,6,'0-6-101'),
+(102,'MemberIntegration','积分兑换单',NULL,6,'0-6-102'),
+(103,'MemberAccount','会员帐户表',NULL,6,'0-6-103'),
+(104,'MemberIntegration','会员积分表',NULL,6,'0-6-104'),
+(105,'PayextractSet','提成设置',NULL,7,'0-7-105'),
+(106,'PayextractList','提成列表',NULL,7,'0-7-106'),
+(107,'PayWage','工资参数',NULL,7,'0-7-107'),
+(108,'PayWageTable','工资表',NULL,7,'0-7-108'),
+(109,'BasicCategory','商品类别',NULL,8,'0-8-109'),
+(110,'BasicGoodsInfo','商品信息',NULL,8,'0-8-110'),
+(111,'BasicSupplier','供货商信息',NULL,8,'0-8-111'),
+(112,'BasicDepartment','公司部门',NULL,8,'0-8-112'),
+(113,'BasicStaff','员工信息',NULL,8,'0-8-113'),
+(114,'Basicdepot','仓库信息',NULL,8,'0-8-114'),
+(115,'BasicFunds','资金帐户',NULL,8,'0-8-115'),
+(116,'BasicPicking','配货地址',NULL,8,'0-8-116'),
+(117,'accountant','会计科目',NULL,9,'0-9-117'),
+(118,'FinancialCash','现金明细',NULL,9,'0-9-118'),
+(119,'FinancialBank','银行明细',NULL,9,'0-9-119'),
+(120,'FinancialStaff','员工借款',NULL,9,'0-9-120'),
+(121,'FinancialBorrowed','借入资金',NULL,9,'0-9-121'),
+(122,'FinancialLoan','借出资金',NULL,9,'0-9-122'),
+(123,'FinancialOtherIn','其他收款',NULL,9,'0-9-123'),
+(124,'FinancialOtherOut','其他付款',NULL,9,'0-9-124'),
+(125,'FinancialAccount','账户管理',NULL,9,'0-9-125'),
+(126,'FinancialTransfer','转帐凭证',NULL,9,'0-9-126'),
+(127,'FinancialMonths','月结转',NULL,9,'0-9-127'),
+(128,'FinancialYears','年结转',NULL,9,'0-9-128'),
+(129,'FinancialLoss','损益表',NULL,9,'0-9-129'),
+(130,'FinancialDebt','资产负债表',NULL,9,'0-9-130'),
+(131,'InitialStock','库存期初',NULL,10,'0-10-131'),
+(132,'InitialRecv','应收期初',NULL,10,'0-10-132'),
+(133,'InitialSend','应付期初',NULL,10,'0-10-133'),
+(134,'Initialadvance','预收期初',NULL,10,'0-10-134'),
+(135,'InitialPrepaid','预付期初',NULL,10,'0-10-135'),
+(136,'InitialCash','现金期初',NULL,10,'0-10-136'),
+(137,'InitialBank','银行期初',NULL,10,'0-10-137'),
+(138,'InitialBorrow','借入商品期初',NULL,10,'0-10-138'),
+(139,'InitialConfessed','供出商品期初',NULL,10,'0-10-139'),
+(140,'InitialLoan','员工借款期初',NULL,10,'0-10-140'),
+(141,'InitialImport','借入资金期初',NULL,10,'0-10-141'),
+(142,'InitialExport','借出资金期初',NULL,10,'0-10-142'),
+(143,'InitialFinancial','期初财务报表',NULL,10,'0-10-143'),
+(144,'InitialBooks','账本设置',NULL,10,'0-10-144'),
+(145,'SystemRole','角色管理',NULL,11,'0-11-145'),
+(146,'SystemAdmin','管理员',NULL,11,'0-11-146'),
+(147,'SystemPrivilege','权限配置',NULL,11,'0-11-147'),
+(148,'SystemEmailSet','邮箱配置',NULL,11,'0-11-148'),
+(149,'SystemEmailTemp','邮件模板',NULL,11,'0-11-149'),
+(150,'Systemplacard','公告管理',NULL,11,'0-11-150'),
+(151,'SystemLog','系统日志',NULL,11,'0-11-151'),
+(152,'SystemDataBak','数据备份',NULL,11,'0-11-152'),
+(153,'SystemDataRev','数据恢复',NULL,11,'0-11-153'),
+(154,'SystemOutLibClass','出库类别',NULL,11,'0-11-154'),
+(156,'SystemVersion','版本信息',NULL,11,'0-11-156'),
+(155,'SystemInLibClass','入库类别',NULL,11,'0-11-155');
+
+
+
+
+
+insert  into company(ID,Title,Genre,RegNumber,Address,RegCaptita,TradeArea,MajorGood,Brief,RepName,RepSex,RepTelephone,MobilePhone,ZipCode,CreateTimed) values (1,'国商网','民营','2013056210','北京朝阳区西大望路蓝堡国际II座五层','1000万','纸媒黄页、网络服务','中国贸易黄页','国商集团有限公司是商务部下属的股份制企业，以服务贸易及传媒推广工作为主。公司于2005年成立。我们的理念：“以品牌求生存，以信用谋发展”。','刘晓东','男','010955995285','13701251012','100000','1989-06-26');
+
+
+insert  into masterrole(ID,CompanyID,Title,Bewrite,ActionStr) values (1,1,'超级管理员','拥有一切权限','这是权限字符串'),(2,1,'普通管理员','拥有部分权限',NULL),(3,1,'测试用户','拥有有限权限',NULL);
+
+insert  into masteruser(ID,CompanyID,RoleID,LoginName,Password,RealName,Sex,BirthDay,Dept,Supervisor,Job,JobDesc,OfficePhone,HomePhone,MobilePhone,Email,Status,LoginNumber,AllowIP,EmbarIP,AllowDate,LastLoginTime,LastIP,CreateUser,AddTimed) values (1,1,1,'admin','21232f297a57a5a743894a0e4a801fc3','田炜',1,'1989-06-26','技术部',0,'Web开发工程师','定义公司网站功能需求，完成设计需求。','01059954582','0105236421','13845262542','tian@qq.com',1,1,'*',NULL,NULL,'1989-06-26','202.152.1.26','admin','1989-06-26');
+
+
+销售管理
+	销售
+	POS销售
+	销售发货单
+	销售退货单
+	销售对帐
+采购管理
+	采购
+	采购到货单
+	采购退货单
+	采购对帐	
+库存管理
+	商品调拨
+	报损单
+	报溢单
+	入库单
+	出库单
+	商品组装单
+	商品拆分单
+	库存盘点
+	库存上下限报警
+基础数据
+	公司部门
+	员工信息
+	资金帐户
+	供应商资料
+	客户资料
+	商品分类
+	商品信息
+	货运公司
+报表查询
+	销售走势
+	销售报表
+	销售排行表
+	采购走势
+	采购报表
+	库存报表
+财务管理
+	销售发票管理
+	采购发票管理
+初始设置
+	库存期初
+	应收期初
+	应付期初
+	预收期初
+	预付期初
+	现金期初
+	银行期初
+	帐务报表
+	帐本设置
+系统配置
+	角色管理
+	用户管理
+	权限管理
+	系统日志

@@ -1,0 +1,26 @@
+phpQuery是一个用php实现的类似jQuery的开源项目，可以在服务器端以jQuery的语法形式解析网页元素。 相对于正则或其它方式匹配网页方式，phpQuery使用起来要方便的多。
+
+在使用phpQuery采集网页时，遇到一个问题：在处理大量网页之后，phpQuery占用的内存数量非常惊人（很快就超过了1G)，
+
+比如这段代码：
+
+while (true) {
+    phpQuery::newDocumentFile($htmlFile);
+    // 处理网页元素...
+    echo memory_get_usage() . "\n";
+}
+谨慎运行上面这段代码，它会很快用光你的内存。
+
+经过查看phpQuery的源代码终于发现了问题所在，phpQuery在每处理一个网页就会产生一个DOMDocumentWrapper 对象，而每个DOMDocumentWrapper 对象会被保存在静态成员$documents中（phpQuery::createDocumentWrapper中），这个变量是一个数组，每解析一个网页数组元素就增加一个。
+
+phpQuery::$documents[$wrapper->id] = $wrapper;
+
+找到问题后，解决就很容易了，每次解析完一个网页，把phpQuery::$documents置空即可。
+
+while (true) {
+    phpQuery::newDocumentFile($htmlFile);
+    // 处理网页元素...
+    phpQuery::$documents = array();
+    echo memory_get_usage() . "\n";
+}
+内存占用稳定了。

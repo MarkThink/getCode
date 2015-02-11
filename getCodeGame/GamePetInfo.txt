@@ -1,0 +1,129 @@
+﻿execute sp_addextendedproperty 'MS_Description', 
+   '角色ID',
+   'user', 'dbo', 'table', 'GamePet', 'column', 'ActorID'
+go
+
+execute sp_addextendedproperty 'MS_Description', 
+   '雇主角色ID, 如果非被雇佣的宠物，则为０',
+   'user', 'dbo', 'table', 'GamePet', 'column', 'EmployerActorID'
+go
+
+execute sp_addextendedproperty 'MS_Description', 
+   '灵宠ID(自增列)',
+   'user', 'dbo', 'table', 'GamePet', 'column', 'PetID'
+go
+
+execute sp_addextendedproperty 'MS_Description', 
+   '宠物名称',
+   'user', 'dbo', 'table', 'GamePet', 'column', 'PetName'
+go
+
+execute sp_addextendedproperty 'MS_Description', 
+   '性别 0 雄 1 雌',
+   'user', 'dbo', 'table', 'GamePet', 'column', 'Sex'
+go
+
+execute sp_addextendedproperty 'MS_Description', 
+   '资质',
+   'user', 'dbo', 'table', 'GamePet', 'column', 'Ability'
+go
+
+execute sp_addextendedproperty 'MS_Description', 
+   '职业 1.法系 2.物理系 3 体质系',
+   'user', 'dbo', 'table', 'GamePet', 'column', 'PetType'
+go
+
+execute sp_addextendedproperty 'MS_Description', 
+   '宠物等级',
+   'user', 'dbo', 'table', 'GamePet', 'column', 'Level'
+go
+
+execute sp_addextendedproperty 'MS_Description', 
+   '宠物经验',
+   'user', 'dbo', 'table', 'GamePet', 'column', 'Exp'
+go
+
+execute sp_addextendedproperty 'MS_Description', 
+   '当前气血',
+   'user', 'dbo', 'table', 'GamePet', 'column', 'CurHP'
+go
+
+execute sp_addextendedproperty 'MS_Description', 
+   '寿命',
+   'user', 'dbo', 'table', 'GamePet', 'column', 'Life'
+go
+
+execute sp_addextendedproperty 'MS_Description', 
+   '是否为参战状态',
+   'user', 'dbo', 'table', 'GamePet', 'column', 'IsReadyFight'
+go
+
+execute sp_addextendedproperty 'MS_Description', 
+   '当前精力',
+   'user', 'dbo', 'table', 'GamePet', 'column', 'CurThew'
+go
+
+execute sp_addextendedproperty 'MS_Description', 
+   '灵性等级',
+   'user', 'dbo', 'table', 'GamePet', 'column', 'WiseLevel'
+go
+
+execute sp_addextendedproperty 'MS_Description', 
+   '灵性灵魂等级',
+   'user', 'dbo', 'table', 'GamePet', 'column', 'WiseSoulLevel'
+go
+
+execute sp_addextendedproperty 'MS_Description', 
+   '灵性祝福等级',
+   'user', 'dbo', 'table', 'GamePet', 'column', 'WiseBlessLevel'
+go
+
+execute sp_addextendedproperty 'MS_Description', 
+   '灵性祝福',
+   'user', 'dbo', 'table', 'GamePet', 'column', 'WiseBless'
+go
+
+execute sp_addextendedproperty 'MS_Description', 
+   '成长等级',
+   'user', 'dbo', 'table', 'GamePet', 'column', 'GrowLevel'
+go
+
+execute sp_addextendedproperty 'MS_Description', 
+   '成长灵魂等级',
+   'user', 'dbo', 'table', 'GamePet', 'column', 'GrowSoulLevel'
+go
+
+execute sp_addextendedproperty 'MS_Description', 
+   '成长祝福等级',
+   'user', 'dbo', 'table', 'GamePet', 'column', 'GrowBlessLevel'
+go
+
+execute sp_addextendedproperty 'MS_Description', 
+   '成长祝福',
+   'user', 'dbo', 'table', 'GamePet', 'column', 'GrowBless'
+go
+
+execute sp_addextendedproperty 'MS_Description', 
+   '灵宠装备格子数量，一般不超过5个',
+   'user', 'dbo', 'table', 'GamePet', 'column', 'KitbagGridNum'
+go
+
+execute sp_addextendedproperty 'MS_Description', 
+   '变形ID，用于拓形',
+   'user', 'dbo', 'table', 'GamePet', 'column', 'TransformID'
+go
+
+execute sp_addextendedproperty 'MS_Description', 
+   '技能数据区(技能ID 1字节+技能等级１字节)*8＝16字节',
+   'user', 'dbo', 'table', 'GamePet', 'column', 'SkillBuffer'
+go
+
+execute sp_addextendedproperty 'MS_Description', 
+   '宠物创建时间',
+   'user', 'dbo', 'table', 'GamePet', 'column', 'CreateTime'
+go
+
+execute sp_addextendedproperty 'MS_Description', 
+   '是否已删除',
+   'user', 'dbo', 'table', 'GamePet', 'column', 'IsDelete'
+go
